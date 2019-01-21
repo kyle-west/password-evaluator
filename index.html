@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./lib/theme.css">
+    <script src="./lib/password-evaluator.js"></script>
+  </head>
+  <body>
+    <section>
+      <h1>
+        Password Strength Checker
+      </h1>
+
+      From <a href="https://en.wikipedia.org/wiki/Password_strength">Wikipedia</a>:
+      <blockquote>
+        Password strength is a measure of the effectiveness of a password 
+        against guessing or brute-force attacks. In its usual form, it 
+        estimates how many trials an attacker who does not have direct 
+        access to the password would need, on average, to guess it correctly. 
+        The strength of a password is a function of length, complexity, 
+        and unpredictability.
+      </blockquote>
+      This website implements that <em>function</em> spoken of.
+    </section>
+
+    <section>
+      <p>
+        Enter your password below to calculate it's bit strength.
+      </p>
+      <input type="password" id="password" oninput="calculateStrength(this)"> <input type="button" value="Show/Hide Password" onclick="togglePasswordShow()">
+      <p>
+        Your password has a bit-strength of <span id="results">0</span>.
+      </p>
+    </section>
+
+    <footer>
+      This website will <em>never</em> store your password information, 
+      as all calculations are done on the client's end with no communication 
+      to a backend. This site is hosted using GitHub Pages, and thus there 
+      is not even a server to communicate with. If you wish to inspect the 
+      code yourself, it is hosted for free under an MIT license at 
+      <a href=""><code>kyle-west/password-evaluator</code></a>. Feel free 
+      to check it out. 
+    </footer>
+  </body>
+</html>
