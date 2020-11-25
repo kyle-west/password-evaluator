@@ -1,11 +1,89 @@
-footer {
-  position: fixed;
-  border-top: 1px solid black;
-  bottom: 5px;
+body {
+  background-color: #eee;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.flex-wrapper > * {
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: 10px;
+  overflow-wrap: break-word;
+  padding: 8px;
+  width: 50%;
 }
 
 blockquote {
   font-style: italic;
   border-left: 3px solid blue;
   padding-left: 5px;
+}
+
+#strength-description {
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+  padding: 2px;
+  width: fit-content;
+}
+
+#strength-description.very-weak,
+#strength-description.weak,
+#strength-description.reasonable,
+#strength-description.strong,
+#strength-description.very-strong {
+  display: inline-block;
+}
+
+#strength-description.very-weak {
+  background-color: #f00;
+}
+
+#strength-description.weak {
+  background-color: #ffac3d;
+}
+
+#strength-description.reasonable {
+  background-color: #ceff3d;
+}
+
+#strength-description.strong {
+  background-color: #33f668;
+}
+
+#strength-description.very-strong {
+  background-color: #ab00ff;
+}
+
+.warning {
+  background-color: #ffac3d;
+  border: 1px solid #f00;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 6px 0px;
+  padding: 2px;
+  width: fit-content;
+}
+
+footer {
+  position: fixed;
+  border-top: 1px solid black;
+  bottom: 5px;
+}
+
+@media (max-width: 800px) {
+  .flex-wrapper {
+    flex-flow: column;
+  }
+
+  .flex-wrapper > * {
+    width: inherit;
+  }
 }
