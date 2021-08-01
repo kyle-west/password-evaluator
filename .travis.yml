@@ -1,0 +1,11 @@
+language: node_js
+dist: trusty
+node_js:
+  - '14'
+cache:
+  npm: false
+install:
+  - npm install
+  - npm run build
+script:
+  - npm test

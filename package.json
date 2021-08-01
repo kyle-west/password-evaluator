@@ -4,8 +4,8 @@
   "description": "A simple HTML app to compare the strength of passwords.",
   "main": "index.html",
   "scripts": {
-    "start": "python3 -m http.server 5000 || python -m SimpleHTTPServer 5000",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serve .",
+    "test": "jest"
   },
   "repository": "git+https://github.com/kyle-west/password-evaluator.git",
   "keywords": [
@@ -19,5 +19,9 @@
     "url": "https://github.com/kyle-west/password-evaluator/issues"
   },
   "homepage": "https://github.com/kyle-west/password-evaluator#readme",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "serve": "^12.0.0"
+  }
 }
