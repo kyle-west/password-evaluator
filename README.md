@@ -2,7 +2,7 @@
 
 I made to be a password strength checker for myself to use so that I could guarantee it isn't scraping data.
 
-[kyle-west.github.io/password-evaluator/](kyle-west.github.io/password-evaluator/)
+[kyle-west.github.io/password-evaluator/](https://kyle-west.github.io/password-evaluator/)
 
 This site implements the following formula used to calculate password entropy, where `alphabetSize` represents the space of the charset used in the password and `**` is notation for _to the power of_ (adopted from python syntax).
 
